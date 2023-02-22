@@ -14,12 +14,12 @@ const navLinks = [
   },
 
   {
-    display: "Menu",
+    display: "Contact",
     url: "#",
   },
   
   {
-    display: "Contact",
+    display: "Login",
     url: "#",
   },
 ];
