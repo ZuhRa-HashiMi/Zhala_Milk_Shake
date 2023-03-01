@@ -38,7 +38,7 @@ const Header = () => {
               <span>
                 <i className="ri-restaurant-2-line"></i>
               </span>
-              Zhala
+              &nbsp;Zhala
             </h2>
           </div>
 
