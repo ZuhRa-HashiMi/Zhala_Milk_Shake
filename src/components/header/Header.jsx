@@ -1,4 +1,4 @@
-import {React, useRef} from "react";
+import { React, useRef, useState } from "react";
 import "./Header.css";
 
 import { Container } from "reactstrap";
@@ -17,7 +17,7 @@ const navLinks = [
     display: "Contact",
     url: "#",
   },
-  
+
   {
     display: "Login",
     url: "#",
@@ -25,10 +25,9 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const menuRef = useRef()
+  const menuRef = useRef();
 
-  const menuToggle = () => menuRef.current.classList.toggle('active__menu')
-
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
   return (
     <header className="header">
       <Container>
@@ -44,10 +43,14 @@ const Header = () => {
 
           <div className="nav__menu" ref={menuRef}>
             <div className="nav__list__wrapper d-flex align-items-center gap-5">
+              <i
+                className="ri-close-circle-fill close-icon"
+                onClick={menuToggle}
+              ></i>
               <ul className="nav__list">
                 {navLinks.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <a href={item.url}  onClick={menuToggle} >
+                    <a href={item.url} onClick={menuToggle}>
                       {item.display}
                     </a>
                   </li>
