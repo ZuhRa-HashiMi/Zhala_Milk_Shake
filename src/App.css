@@ -1,6 +1,5 @@
 /* =========== google fonts =========== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 /* ======== base style ======= */
@@ -18,7 +17,7 @@ html {
 
 section,
 footer {
-  padding: 70px 0px;
+  padding: 70px 0;
 }
 
 h1,
@@ -47,6 +46,6 @@ i {
 
 @media only screen and (max-width: 767px) {
   section {
-    padding: 40px 0px;
+    padding: 40px 0;
   }
 }

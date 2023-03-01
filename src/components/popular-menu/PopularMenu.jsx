@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import { popularMenuFood } from "../../assests/face-data/product";
+import popularMenuFood from "../../assests/face-data/product";
 import ProductCard from "../product-card/ProductCard";
 import "./popular-menu.css";
 
