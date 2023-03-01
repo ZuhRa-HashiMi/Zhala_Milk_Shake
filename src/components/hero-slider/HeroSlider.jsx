@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 import Slider from "react-slick";
 
-import { sliderData } from "../../assests/face-data/slider";
+import sliderData from "../../assests/face-data/slider";
 import "./slider.css";
 
 const HeroSlider = () => {
