@@ -13,19 +13,19 @@ const ProductCard = (props) => {
       <div className="product__content">
         <div className="rating text-center">
           <span>
-            <i class="ri-star-s-fill"></i>
+            <i className="ri-star-s-fill"></i>
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+            <i className="ri-star-s-fill"></i>
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+            <i className="ri-star-s-fill"></i>
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+            <i className="ri-star-s-fill"></i>
           </span>
           <span>
-            <i class="ri-star-s-fill"></i>
+            <i className="ri-star-s-fill"></i>
           </span>
         </div>
 
@@ -37,7 +37,7 @@ const ProductCard = (props) => {
             Price: $<span>{price}</span>
           </span>
           <span className="shopping__icon">
-            <i class="ri-shopping-cart-line"></i>
+            <i className="ri-shopping-cart-line"></i>
           </span>
         </div>
       </div>

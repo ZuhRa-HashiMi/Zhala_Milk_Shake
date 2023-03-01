@@ -1,4 +1,4 @@
-import {React, useRef} from "react";
+import { React, useRef } from "react";
 import "./Header.css";
 
 import { Container } from "reactstrap";
@@ -17,7 +17,7 @@ const navLinks = [
     display: "Contact",
     url: "#",
   },
-  
+
   {
     display: "Login",
     url: "#",
@@ -25,9 +25,9 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const menuRef = useRef()
+  const menuRef = useRef();
 
-  const menuToggle = () => menuRef.current.classList.toggle('active__menu')
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
   return (
     <header className="header">
@@ -36,7 +36,7 @@ const Header = () => {
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
               <span>
-                <i class="ri-restaurant-2-line"></i>
+                <i className="ri-restaurant-2-line"></i>
               </span>
               Zhala
             </h2>
@@ -47,7 +47,7 @@ const Header = () => {
               <ul className="nav__list">
                 {navLinks.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <a href={item.url}  onClick={menuToggle} >
+                    <a href={item.url} onClick={menuToggle}>
                       {item.display}
                     </a>
                   </li>
@@ -58,7 +58,7 @@ const Header = () => {
                 <div className="custom__search ">
                   <input type="text" placeholder="search item...." />
                   <span>
-                    <i class="ri-search-line"></i>
+                    <i className="ri-search-line"></i>
                   </span>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Header = () => {
 
           <div>
             <span className="cart__icon">
-              <i class="ri-shopping-basket-line"></i>
+              <i className="ri-shopping-basket-line"></i>
 
               <span className="badge">2</span>
             </span>
@@ -75,7 +75,7 @@ const Header = () => {
 
           <div className="mobile__menu">
             <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
+              <i className="ri-menu-line" onClick={menuToggle}></i>
             </span>
           </div>
         </div>
