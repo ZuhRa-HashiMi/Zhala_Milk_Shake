@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useRef } from "react";
 import "./Header.css";
 
 import { Container } from "reactstrap";
@@ -35,9 +35,9 @@ const Header = () => {
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
               <span>
-                <i class="ri-restaurant-2-line"></i>
+                <i className="ri-restaurant-2-line"></i>
               </span>
-              Zhala
+              &nbsp;Zhala
             </h2>
           </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
                 <div className="custom__search ">
                   <input type="text" placeholder="search item...." />
                   <span>
-                    <i class="ri-search-line"></i>
+                    <i className="ri-search-line"></i>
                   </span>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Header = () => {
 
           <div>
             <span className="cart__icon">
-              <i class="ri-shopping-basket-line"></i>
+              <i className="ri-shopping-basket-line"></i>
 
               <span className="badge">2</span>
             </span>
@@ -78,7 +78,7 @@ const Header = () => {
 
           <div className="mobile__menu">
             <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
+              <i className="ri-menu-line" onClick={menuToggle}></i>
             </span>
           </div>
         </div>
