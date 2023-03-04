@@ -162,4 +162,8 @@
     cursor: pointer;
     display: block;
   }
+
+  .close-icon:hover {
+    color: #f5b70a;
+  }
 }
