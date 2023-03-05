@@ -20,14 +20,14 @@ const HeroSlider = () => {
         <Slider {...settings}>
           {sliderData.map((item) => (
             <div key={item.id}>
-              <div className="slider__wrapper d-flex align-items-center justify-content-between pt-5">
-                <div className="slider__content w-50 ps-2">
-                  <h2 className="mb-3 ">{item.title}</h2>
-                  <p>{item.desc}</p>
+              <div className="slider__wrapper d-flex flex-column-reverse flex-lg-row flex-md-row flex-sm-column-reverse align-items-center justify-content-between pt-5">
+                <div className="slider__content w-100 px-4">
+                  <h2 className="mb-3">{item.title}</h2>
+                  <p className="text-justify">{item.desc}</p>
                   <button className="btn">Explore Food</button>
                 </div>
 
-                <div className="slider__img w-50">
+                <div className="slider__img w-100 px-4">
                   <img src={item.imgUrl} alt="" className="w-100" />
                 </div>
               </div>

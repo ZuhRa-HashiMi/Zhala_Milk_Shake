@@ -88,6 +88,10 @@
   font-weight: 700;
 }
 
+.close-icon {
+  display: none;
+}
+
 /* ==========  make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
@@ -112,8 +116,7 @@
     background: #141124;
     flex-direction: column;
     box-shadow: 5px 5px 15px -5px #f5b70a;
-    justify-content: center !important;
-    padding: 0 20px;
+    padding: 110px 30px;
   }
 
   .nav__list {
@@ -122,7 +125,7 @@
   }
 
   .nav__item a {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .header {
@@ -149,5 +152,18 @@
 
   .active__menu {
     display: block;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .close-icon:hover {
+    color: #f5b70a;
   }
 }
